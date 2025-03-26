@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+            let body = document.querySelector('body');
+            window.addEventListener('click', bgAzul);
+            let i = 0;
+
+            function bgAzul(){
+                if(i<Math.floor(Math.random() * (300 + 1) + 200)){
+                    body.style.backgroundColor = body.style.backgroundColor !== "blue" ? "blue" : "red";     
+                    console.log('mudou!');
+                    i++;
+            }else{
+                console.log(`Finalizado em i = ${i}` );
+                clearInterval(iniciar);
+            }};
+            
+            const iniciar = setInterval(bgAzul,10);
+        
+        </script>
+</body>
+</html>
