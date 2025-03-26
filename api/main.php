@@ -4,7 +4,7 @@
     header('Access-Control-Allow-Methods: POST');
     header('Access-Control-Allow-Headers: Content-Type');
 
-    if($_SERVER['REQUEST_METHOD' === 'POST']){
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $banco = [
             ["nome" => "Ostra", "email" => "ostra@outlook.com"],
             ["nome" => "Ana", "email" => "dark@yahoo.com"],
