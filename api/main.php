@@ -14,7 +14,7 @@
         $dados = json_decode(file_get_contents('php://input'), true);
         
 
-        if(in_array('sucesso', $dados['status'])){
+        if(in_array('sucesso', $dados)){
             echo json_encode($banco);
         }else{
             echo json_encode("Nada feito");
