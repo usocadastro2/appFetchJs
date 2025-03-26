@@ -1,0 +1,7 @@
+{
+    "functions": {
+        "api/*.php" : {
+            "runtime": "verel-php@0.7.3"
+        }
+    }
+}
